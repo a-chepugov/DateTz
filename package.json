@@ -1,6 +1,6 @@
 {
 	"name": "DateTz",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Implements analog of Date builtin object that works with timezones that differs from current",
 	"devDependencies": {
 		"babel-eslint": "^8.2.5",
@@ -16,7 +16,6 @@
 		"babel-core": "^6.26.3",
 		"babel-polyfill": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
-		"babel-preset-minify": "^0.4.3",
 		"gulp": "^4.0.0",
 		"gulp-babel": "^7.0.1",
 		"gulp-sourcemaps": "^1.12.1"
