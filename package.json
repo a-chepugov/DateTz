@@ -1,7 +1,7 @@
 {
 	"name": "DateTz",
 	"version": "0.0.1",
-	"description": "Implements analog of Date builtin object that works with timezones that differs from current",
+	"description": "Expands built in Date object to work with time zones that  differs from current",
 	"devDependencies": {
 		"babel-eslint": "^8.2.5",
 		"chai": "^4.1.2",
@@ -30,9 +30,9 @@
 		"type": "git"
 	},
 	"keywords": [
-		"cron",
-		"crontab",
-		"time"
+		"date",
+		"time",
+		"timezones"
 	],
 	"author": "Alexey Chepugov",
 	"license": "ISC",

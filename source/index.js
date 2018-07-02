@@ -71,79 +71,132 @@ class DateTz extends Date {
 	}
 
 	/**
-	 *
+	 * returns date in {@link zone}
 	 * @return {number}
+	 * @example
+	 * import DateTz from 'DateTz';
+	 * const i = new DateTz('+06', '2000-01-10T00:00:00.000+06:00');
+	 * i.setTzDate(12);
+	 * i.getTzDate(); // 12
+	 * i.getUTCDate(); // 13
 	 */
 	getTzDate() {
 		return this.__shifted.getUTCDate();
 	}
 
 	/**
-	 *
+	 * returns day of week in {@link zone}
 	 * @return {number}
+	 * @example
+	 * import DateTz from 'DateTz';
+	 * const i = new DateTz('06', '2000-01-10T00:00:00.000+06:00');
+	 * i.setTzDate(12);
+	 * i.getTzDay(); // 3
+	 * i.getUTCDay(); // 2
 	 */
 	getTzDay() {
 		return this.__shifted.getUTCDay();
 	}
 
 	/**
-	 *
+	 * returns year in {@link zone}
 	 * @return {number}
-	 */
+	 * @example
+	 * import DateTz from 'DateTz';
+	 * const i = new DateTz('+06', '2000-01-01T00:00:00.000+06:00');
+	 * i.setTzFullYear(2002);
+	 * i.getTzFullYear(); // 2002
+	 * i.getUTCFullYear(); // 2001
+	 * */
 	getTzFullYear() {
 		return this.__shifted.getUTCFullYear();
 	}
 
 	/**
-	 *
+	 * returns hours in {@link zone}
 	 * @return {number}
+	 * @example
+	 * import DateTz from 'DateTz';
+	 * const i = new DateTz('-06', '2000-01-01T06:00:00.000Z');
+	 * i.getTzHours(); // 0
+	 * i.setTzHours(2);
+	 * i.getTzHours(); // 2
+	 * i.getUTCHours(); // 8;
 	 */
 	getTzHours() {
 		return this.__shifted.getUTCHours();
 	}
 
 	/**
-	 *
+	 * returns milliseconds in {@link zone}
 	 * @return {number}
+	 * @example
+	 * import DateTz from 'DateTz';
+	 * const i = new DateTz('-06', '2000-01-01T00:00:00.000Z');
+	 * i.setTzMilliseconds(15);
+	 * i.getTzMilliseconds(); // 15
+	 * i.getUTCMilliseconds(); // 15
 	 */
 	getTzMilliseconds() {
 		return this.__shifted.getUTCMilliseconds();
 	}
 
 	/**
-	 *
+	 * returns minutes in {@link zone}
 	 * @return {number}
+	 * @example
+	 * import DateTz from 'DateTz';
+	 * const i = new DateTz('-0603', '2000-01-01T06:00:00.000Z');
+	 * i.setTzMinutes(15);
+	 * i.getTzMinutes(); // 15
+	 * i.getUTCMinutes(); // 18
 	 */
 	getTzMinutes() {
 		return this.__shifted.getUTCMinutes();
 	}
 
 	/**
-	 *
+	 * returns month in {@link zone}
 	 * @return {number}
+	 * @example
+	 * import DateTz from 'DateTz';
+	 * const i = new DateTz('-06', '2000-01-30T20:00:00.000-06:00');
+	 * i.setTzMonth(5);
+	 * i.getTzMonth(); // 5
+	 * i.getUTCMonth(); // 6
 	 */
 	getTzMonth() {
 		return this.__shifted.getUTCMonth();
 	}
 
 	/**
-	 *
+	 * returns seconds in {@link zone}
 	 * @return {number}
+	 * @example
+	 * import DateTz from 'DateTz';
+	 * const i = new DateTz('-06', '2000-01-01T00:00:00.000Z');
+	 * i.setTzMilliseconds(15);
+	 * i.getTzMilliseconds(); // 15
+	 * i.getUTCMilliseconds() // 15
 	 */
 	getTzSeconds() {
 		return this.__shifted.getUTCSeconds();
 	}
 
 	/**
-	 *
+	 * returns offset between {@link zone} and UTC
 	 * @return {number}
+	 * @example
+	 * import DateTz from 'DateTz';
+	 * i = new DateTz('-0507', '2000-01-30T20:00:00.000-06:00');
+	 * i.getTzTimezoneOffset(); // 307
 	 */
 	getTzTimezoneOffset() {
 		return -(this.__h * 60 + this.__m);
 	}
 
 	/**
-	 *
+	 * set date in {@link zone}
 	 */
 	setTzDate() {
 		const _shifted = this.__shifted;
@@ -152,7 +205,7 @@ class DateTz extends Date {
 	}
 
 	/**
-	 *
+	 * set year in {@link zone}
 	 */
 	setTzFullYear() {
 		const _shifted = this.__shifted;
@@ -161,7 +214,7 @@ class DateTz extends Date {
 	}
 
 	/**
-	 *
+	 * set hours in {@link zone}
 	 */
 	setTzHours() {
 		const _shifted = this.__shifted;
@@ -170,7 +223,7 @@ class DateTz extends Date {
 	}
 
 	/**
-	 *
+	 * set milliseconds in {@link zone}
 	 */
 	setTzMilliseconds() {
 		const _shifted = this.__shifted;
@@ -179,7 +232,7 @@ class DateTz extends Date {
 	}
 
 	/**
-	 *
+	 * set minutes in {@link zone}
 	 */
 	setTzMinutes() {
 		const _shifted = this.__shifted;
@@ -188,7 +241,7 @@ class DateTz extends Date {
 	}
 
 	/**
-	 *
+	 * set month in {@link zone}
 	 */
 	setTzMonth() {
 		const _shifted = this.__shifted;
@@ -197,7 +250,7 @@ class DateTz extends Date {
 	}
 
 	/**
-	 *
+	 * set seconds in {@link zone}
 	 */
 	setTzSeconds() {
 		const _shifted = this.__shifted;
