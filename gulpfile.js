@@ -4,9 +4,7 @@ const {name, version} = require('./package.json');
 
 const paths = {
 	source: './source/**/!(*test).js',
-	tests: './source/**/*test.js',
-	build: 'build',
-	clear: ['./build', 'doc'],
+	clear: ['doc'],
 	doc: 'doc'
 };
 
@@ -32,7 +30,7 @@ gulp.task('docs:html', function () {
 gulp.task('docs:watch', () => {
 	const watcher = gulp.watch(paths.source, gulp.series('docs:html'));
 	watcher.on('change', function (path) {
-		console.log(`File${path} was changed`);
+		console.info(`File${path} was changed`);
 	});
 	return watcher;
 });
