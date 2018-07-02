@@ -1,5 +1,5 @@
 {
-	"name": "DateTz",
+	"name": "date-tz",
 	"version": "0.0.1",
 	"description": "Expands built in Date object to work with time zones that  differs from current",
 	"devDependencies": {

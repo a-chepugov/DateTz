@@ -8,7 +8,7 @@ class DateTz extends Date {
 	 * @param {string} zone - {@link zone}
 	 * @param {*} args - any data to initialize  native {@link date} object
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const date = new DateTz('+0300', '2000-01-01T00:00:00.000Z');
 	 * i.toISOString(); // '2000-01-01T00:00:00.000Z'
 	 */
@@ -20,7 +20,7 @@ class DateTz extends Date {
 	/**
 	 * @param {String} value - zone in {@link https://rfc2.ru/5322.rfc/print#p3.3 rfc2822} format
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const i = new DateTz('+0000', '2000-01-01T00:00:00.000Z');
 	 * i.zone // '+0000';
 	 * i.getTzHours(); // 0
@@ -74,7 +74,7 @@ class DateTz extends Date {
 	 * returns date in {@link zone}
 	 * @return {number}
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const i = new DateTz('+06', '2000-01-10T00:00:00.000+06:00');
 	 * i.setTzDate(12);
 	 * i.getTzDate(); // 12
@@ -88,7 +88,7 @@ class DateTz extends Date {
 	 * returns day of week in {@link zone}
 	 * @return {number}
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const i = new DateTz('06', '2000-01-10T00:00:00.000+06:00');
 	 * i.setTzDate(12);
 	 * i.getTzDay(); // 3
@@ -102,7 +102,7 @@ class DateTz extends Date {
 	 * returns year in {@link zone}
 	 * @return {number}
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const i = new DateTz('+06', '2000-01-01T00:00:00.000+06:00');
 	 * i.setTzFullYear(2002);
 	 * i.getTzFullYear(); // 2002
@@ -116,7 +116,7 @@ class DateTz extends Date {
 	 * returns hours in {@link zone}
 	 * @return {number}
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const i = new DateTz('-06', '2000-01-01T06:00:00.000Z');
 	 * i.getTzHours(); // 0
 	 * i.setTzHours(2);
@@ -131,7 +131,7 @@ class DateTz extends Date {
 	 * returns milliseconds in {@link zone}
 	 * @return {number}
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const i = new DateTz('-06', '2000-01-01T00:00:00.000Z');
 	 * i.setTzMilliseconds(15);
 	 * i.getTzMilliseconds(); // 15
@@ -145,7 +145,7 @@ class DateTz extends Date {
 	 * returns minutes in {@link zone}
 	 * @return {number}
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const i = new DateTz('-0603', '2000-01-01T06:00:00.000Z');
 	 * i.setTzMinutes(15);
 	 * i.getTzMinutes(); // 15
@@ -159,7 +159,7 @@ class DateTz extends Date {
 	 * returns month in {@link zone}
 	 * @return {number}
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const i = new DateTz('-06', '2000-01-30T20:00:00.000-06:00');
 	 * i.setTzMonth(5);
 	 * i.getTzMonth(); // 5
@@ -173,7 +173,7 @@ class DateTz extends Date {
 	 * returns seconds in {@link zone}
 	 * @return {number}
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * const i = new DateTz('-06', '2000-01-01T00:00:00.000Z');
 	 * i.setTzMilliseconds(15);
 	 * i.getTzMilliseconds(); // 15
@@ -187,7 +187,7 @@ class DateTz extends Date {
 	 * returns offset between {@link zone} and UTC
 	 * @return {number}
 	 * @example
-	 * import DateTz from 'DateTz';
+	 * import DateTz from 'date-tz';
 	 * i = new DateTz('-0507', '2000-01-30T20:00:00.000-06:00');
 	 * i.getTzTimezoneOffset(); // 307
 	 */
