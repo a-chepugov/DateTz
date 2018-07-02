@@ -1,6 +1,7 @@
 const expect = require('chai').expect;
 
-const {'default': Class, INVALID_ZONE_FORMAT} = require('./index');
+const Class = require('./index');
+const {INVALID_ZONE_FORMAT} = require('./index');
 
 describe('initialization', function () {
 

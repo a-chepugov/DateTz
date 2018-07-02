@@ -276,7 +276,5 @@ DateTz.parse = function (zone, ...args) {
 	return new DateTz(zone, Date.parse(...args));
 };
 
-module.exports = {
-	'default': DateTz,
-	INVALID_ZONE_FORMAT: INVALID_ZONE_FORMAT
-};
+module.exports = DateTz;
+module.exports.INVALID_ZONE_FORMAT = INVALID_ZONE_FORMAT;
