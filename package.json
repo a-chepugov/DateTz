@@ -1,21 +1,19 @@
 {
 	"name": "date-tz",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Expands built in Date object to work with time zones that  differs from current",
 	"devDependencies": {
 		"babel-eslint": "^8.2.5",
 		"chai": "^4.1.2",
 		"del": "^3.0.0",
 		"documentation": "^5.3.5",
-		"eslint": "^5.0.0",
+		"eslint": "^5.0.1",
 		"eslint-config-wikimedia": "^0.5.0",
-		"gulp-documentation": "^3.2.1",
 		"gulp": "^4.0.0",
+		"gulp-documentation": "^3.2.1",
 		"mocha": "^5.2.0"
 	},
-	"dependencies": {
-
-	},
+	"dependencies": {},
 	"scripts": {
 		"test": "mocha `find ./source -name '*.test.js'`",
 		"test:watch": "mocha `find ./source -name '*.test.js'` --watch"
