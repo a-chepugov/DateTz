@@ -2,7 +2,7 @@
 
 ## constructor
 
-Wrapper above js native Date object for using timezone time instead of local (for current machine)
+Wrapper above js native Date object for using with time zones that differs from current
 
 **Parameters**
 

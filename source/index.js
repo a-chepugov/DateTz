@@ -4,7 +4,7 @@ const INVALID_ZONE_FORMAT = 'Invalid timezone zone format';
 
 class DateTz extends Date {
 	/**
-	 * Wrapper above js native Date object for using timezone time instead of local (for current machine)
+	 * Wrapper above js native Date object for using with time zones that differs from current
 	 * @param {string} zone - {@link zone}
 	 * @param {*} args - any data to initialize  native {@link date} object
 	 * @example
@@ -278,3 +278,4 @@ DateTz.parse = function (zone, ...args) {
 
 module.exports = DateTz;
 module.exports.INVALID_ZONE_FORMAT = INVALID_ZONE_FORMAT;
+module.exports.patternTimezone = patternTimezone;

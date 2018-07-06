@@ -1,7 +1,7 @@
 {
 	"name": "date-tz",
-	"version": "0.1.1",
-	"description": "Expands built in Date object to work with time zones that  differs from current",
+	"version": "0.1.2",
+	"description": "Wrapper above js native Date object for using with time zones that differs from current",
 	"devDependencies": {
 		"babel-eslint": "^8.2.5",
 		"chai": "^4.1.2",
